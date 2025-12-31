@@ -400,9 +400,9 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 
 **Mayank** - [GitHub](https://github.com/Mayank-iitj) | [LinkedIn](https://linkedin.com/in/mayankiitj)
 
-**Project Link**: [https://github.com/yourusername/threat-intel-platform](https://github.com/yourusername/threat-intel-platform)
+**Project Link**: [https://github.com/yourusername/threat-intel-platform](https://github.com/Mayank-iitj/threat-intel-platform)
 
-**Live Demo**: [https://threat-intel.railway.app](https://threat-intel.railway.app)
+**Live Demo**: [https://threat-intel.railway.app](https://threat-intel-platform.railway.app)
 
 ---
 
