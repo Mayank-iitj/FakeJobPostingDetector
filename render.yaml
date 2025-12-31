@@ -1,0 +1,47 @@
+services:
+  # Main API Service
+  - type: web
+    name: threat-intel-api
+    runtime: python
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 4
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_ORIGINS
+        value: "*"
+      - key: WORKERS
+        value: 4
+      - key: LOG_LEVEL
+        value: info
+      - key: RATE_LIMIT_PER_MINUTE
+        value: 100
+      - key: MAX_UPLOAD_SIZE_MB
+        value: 50
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: 30
+      - key: ENABLE_EXPLAINABILITY
+        value: true
+      - key: ENABLE_ACTIVE_LEARNING
+        value: false
+      - key: ENABLE_DRIFT_DETECTION
+        value: false
+
+# Optional: Add PostgreSQL database
+# databases:
+#   - name: threat-intel-db
+#     databaseName: threatdb
+#     user: threatuser
+#     plan: free
+
+# Optional: Add Redis
+# - type: redis
+#   name: threat-intel-redis
+#   plan: free
+#   maxmemoryPolicy: allkeys-lru
