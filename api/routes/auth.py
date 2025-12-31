@@ -59,12 +59,13 @@ class UserCreate(BaseModel):
 
 
 # Mock database (replace with actual DB)
+# Pre-hashed password for "demopassword" using bcrypt
 fake_users_db = {
     "demo": {
         "username": "demo",
         "full_name": "Demo User",
         "email": "demo@example.com",
-        "hashed_password": pwd_context.hash("demopassword"),
+        "hashed_password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYqJxMQkqW2",  # "demopassword"
         "disabled": False,
     }
 }
