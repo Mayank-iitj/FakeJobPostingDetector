@@ -12,9 +12,15 @@ jobs:
     
     strategy:
       matrix:
-        python-version: ['3.10', '3.11']
+        python-version: ['3.11']
     
     steps:
+    - name: Free up disk space
+      run: |
+        sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc || true
+        sudo docker system prune -af || true
+        sudo apt-get clean || true
+        df -h
     - uses: actions/checkout@v3
     
     - name: Set up Python ${{ matrix.python-version }}
@@ -26,15 +32,15 @@ jobs:
       uses: actions/cache@v3
       with:
         path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements-render.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
     
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install pytest pytest-cov pytest-asyncio black flake8
+        pip install --no-cache-dir -r requirements-render.txt
+        pip install --no-cache-dir pytest pytest-cov pytest-asyncio black flake8
     
     - name: Lint with flake8
       run: |
