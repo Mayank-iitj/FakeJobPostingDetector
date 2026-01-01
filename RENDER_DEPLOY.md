@@ -35,13 +35,13 @@ Click the button below to deploy with pre-configured settings:
    - **Region:** Choose closest to you (Oregon, Frankfurt, Singapore)
    - **Branch:** `main`
    - **Runtime:** Python 3
-   - **Build Command:**
+    - **Build Command (lightweight):**
+       ```bash
+       pip install --upgrade pip && pip install -r requirements-render.txt
+       ```
+    - **Start Command (free tier friendly):**
      ```bash
-     pip install --upgrade pip && pip install -r requirements.txt
-     ```
-   - **Start Command:**
-     ```bash
-     uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 4
+       uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 1 --log-level debug
      ```
 
 ### Step 3: Set Environment Variables (1 min)

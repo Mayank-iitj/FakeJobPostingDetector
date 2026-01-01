@@ -23,6 +23,15 @@ startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 1
 startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 1 --log-level debug
 ```
 
+### 3. Lightweight Dependencies (New)
+**Problem:** Installing full ML stack (PyTorch, Transformers, Lightning, etc.) exceeds free tier memory/time limits during build.
+
+**Fix:** Use a minimal dependency set tailored for the API-only demo build via `requirements-render.txt` and update the Render blueprint to install it:
+```yaml
+buildCommand: pip install --upgrade pip && pip install -r requirements-render.txt
+```
+`requirements-render.txt` includes only FastAPI, Uvicorn, auth dependencies, and dotenv. ML packages remain in `requirements.txt` for local/worker usage.
+
 ---
 
 ## 🔍 Common Causes & Solutions
