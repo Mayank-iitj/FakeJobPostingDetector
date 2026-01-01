@@ -37,7 +37,7 @@ Click the button below to deploy with pre-configured settings:
    - **Runtime:** Python 3
     - **Build Command (lightweight):**
        ```bash
-       pip install --upgrade pip && pip install -r requirements-render.txt
+       pip install --upgrade pip && pip install --no-cache-dir -r requirements-render.txt
        ```
     - **Start Command (free tier friendly):**
      ```bash
@@ -51,7 +51,7 @@ Click **"Advanced"** → Add these environment variables:
 ```env
 SECRET_KEY=wf-gMr8kevo-Dyumh0b2p8VD5q0xt_rXSxfLbvL-XwU
 ALLOWED_ORIGINS=*
-WORKERS=4
+WORKERS=1
 LOG_LEVEL=info
 RATE_LIMIT_PER_MINUTE=100
 ```

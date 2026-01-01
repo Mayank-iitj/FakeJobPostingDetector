@@ -30,7 +30,7 @@ ALLOWED_ORIGINS=*
 
 ### Performance
 ```
-WORKERS=4
+WORKERS=1
 LOG_LEVEL=info
 ```
 
