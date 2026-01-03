@@ -1,0 +1,6 @@
+# System dependencies for Streamlit Cloud deployment
+# Add system packages here if needed (one per line)
+
+# Example:
+# libgl1-mesa-glx
+# tesseract-ocr

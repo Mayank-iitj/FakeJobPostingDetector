@@ -1,0 +1,11 @@
+/* Content Script Styles */
+/* Additional styling for highlighted elements on web pages */
+
+.job-scam-highlight {
+    transition: all 0.2s ease;
+}
+
+.job-scam-highlight:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+}

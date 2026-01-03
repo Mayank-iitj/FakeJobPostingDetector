@@ -1,0 +1,7 @@
+# Placeholder for raw training data
+# Place your job_scams.csv file here
+
+# Expected format:
+# text,label
+# "Job description text...",0
+# "Scam posting text...",1

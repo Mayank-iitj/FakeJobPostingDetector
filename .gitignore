@@ -1,4 +1,4 @@
-.env
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -19,54 +19,49 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
 
-# Virtual environments
+# Virtual Environment
 venv/
-ENV/
 env/
-.venv
+ENV/
 
-# IDEs
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# Jupyter
-.ipynb_checkpoints
+# OS
+.DS_Store
+Thumbs.db
+
+# Models
+models/saved_models/*.pkl
+models/saved_models/*.pt
+models/saved_models/*.onnx
 
 # Data
 data/raw/*
 data/processed/*
-data/screenshots/*
-!data/.gitkeep
-
-# Models
-models/checkpoints/*.ckpt
-models/checkpoints/*.pt
-models/checkpoints/*.pth
-!models/checkpoints/.gitkeep
-
-# MLflow
-mlruns/
-mlartifacts/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
 
 # Logs
-*.log
 logs/
+*.log
 
-# OS
-.DS_Store
-Thumbs.db
+# Environment variables
+.env
+.env.local
+
+# Chrome extension build
+chrome-extension/build/
 
 # Testing
 .pytest_cache/
 .coverage
 htmlcov/
-.tox/
 
-# Docker
-*.env.local
-docker-compose.override.yml
+# Jupyter
+.ipynb_checkpoints/

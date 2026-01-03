@@ -1,34 +1,43 @@
-PROPRIETARY LICENSE
+MIT License
 
-Copyright (c) 2025 Mayank. All Rights Reserved.
+Copyright (c) 2026 Job Scam Detector
 
-This software and associated documentation files (the "Software") are the proprietary 
-and confidential property of Mayank.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-RESTRICTIONS:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-1. The Software is licensed, not sold. No ownership rights are transferred.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-2. You may NOT:
-   - Copy, modify, merge, publish, distribute, sublicense, or sell copies of the Software
-   - Reverse engineer, decompile, or disassemble the Software
-   - Remove or alter any proprietary notices or labels on the Software
-   - Use the Software for any commercial purpose without explicit written permission
-   - Transfer or assign your rights under this license
-
-3. The Software is provided for private use only.
-
-4. Any unauthorized use, reproduction, or distribution of the Software, or any portion 
-   of it, may result in severe civil and criminal penalties, and will be prosecuted 
-   to the maximum extent possible under law.
+---
 
 DISCLAIMER:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
-INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
-PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE 
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
-USE OR OTHER DEALINGS IN THE SOFTWARE.
+This software is provided as an AI-powered assistant for detecting potential
+job scams. It is not infallible and should not be used as the sole method for
+determining whether a job posting is legitimate or fraudulent.
 
-For licensing inquiries, contact: [Your Contact Information]
+Users should:
+- Always verify job postings independently
+- Never share sensitive personal or financial information without verification
+- Report suspected scams to appropriate authorities
+- Exercise common sense and caution
+
+The authors and contributors of this software:
+- Make no guarantees about the accuracy of predictions
+- Are not liable for any losses or damages resulting from use of this software
+- Do not guarantee that all scams will be detected
+- Are not responsible for false positives or false negatives
+
+Use at your own risk.
