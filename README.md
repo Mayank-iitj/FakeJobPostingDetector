@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.109.0-green.svg)](https://fastapi.tiangolo.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 
 **AI-powered system to detect fake and scam job postings across multiple platforms.**
 
